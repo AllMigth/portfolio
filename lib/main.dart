@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:personal_card/coolors.dart';
+
+import 'home.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,11 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'PortfolioX',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
+        accentColor: Coolers.accentColor,
+        textTheme: GoogleFonts.poppinsTextTheme(),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Container(),
+      home: HomeScreen(),
     );
   }
 }
