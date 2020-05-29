@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:personal_card/coolors.dart';
 
 import 'home.dart';
@@ -22,6 +21,8 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      //!HERE WE ORDER THE MAIN PAGE
+      //!WE BUILD THE WIDGETS IN OTHER CLASSES      
       home: HomeScreen(),
     );
   }
